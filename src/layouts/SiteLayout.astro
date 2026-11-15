@@ -89,7 +89,7 @@ const pageTab: Required<Tab> = tab
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 		<link
-			href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,400;0,500;0,700;1,400&family=Noto+Sans+SC:wght@400;500;700&display=swap"
+			href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Noto+Sans+SC:wght@400;500;700&display=swap"
 			rel="stylesheet"
 		/>
 	</head>
@@ -103,8 +103,8 @@ const pageTab: Required<Tab> = tab
 						class:list={['act-btn', { on: !isSearch && !isTags }]}
 						type="button"
 						data-sidebar-toggle
-						title="藏书"
-						aria-label="藏书"
+						title="文章"
+						aria-label="文章"
 						aria-controls="sidebar"
 						aria-expanded="true"
 					>
@@ -147,8 +147,8 @@ const pageTab: Required<Tab> = tab
 				</button>
 			</nav>
 
-			<aside class="sidebar" id="sidebar" aria-label="藏书目录">
-				<div class="sb-head">藏书</div>
+			<aside class="sidebar" id="sidebar" aria-label="文章目录">
+				<div class="sb-head">文章</div>
 				<div class="ws" title={site.name}>
 					<button
 						class="chev"

@@ -21,7 +21,7 @@ const tags = [...counts.entries()].sort(([a], [b]) => a.localeCompare(b, 'zh-Han
 
 	<header class="page-head">
 		<h1 class="page-title">标签</h1>
-		<p class="page-sub mono">{tags.length} 个标签 · {docs.length} 篇藏书</p>
+		<p class="page-sub mono">{tags.length} 个标签 · {docs.length} 篇文章</p>
 	</header>
 
 	{
@@ -32,7 +32,7 @@ const tags = [...counts.entries()].sort(([a], [b]) => a.localeCompare(b, 'zh-Han
 						<svg class="ic"><use href="#i-tag"></use></svg>
 						<span class="lib-main">
 							<span class="lib-title">{tag}</span>
-							<span class="lib-path mono">{count} 篇藏书</span>
+							<span class="lib-path mono">{count} 篇文章</span>
 						</span>
 						<svg class="lib-arrow"><use href="#i-chev"></use></svg>
 					</a>

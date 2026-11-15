@@ -17,7 +17,7 @@ const { docs, focus = false } = Astro.props;
 		type="search"
 		placeholder="搜索标题、路径或标签…"
 		autocomplete="off"
-		aria-label="搜索藏书"
+		aria-label="搜索文章"
 		data-autofocus={focus ? '' : undefined}
 	/>
 	<span class="search-count mono" id="search-count" aria-live="polite">{docs.length} 篇</span>
@@ -51,8 +51,8 @@ const { docs, focus = false } = Astro.props;
 
 {
 	docs.length === 0 ? (
-		<p class="empty">还没有藏书。往 src/content 里放一篇 Markdown 就会出现在这里。</p>
+		<p class="empty">还没有文章。往 src/content 里放一篇 Markdown 就会出现在这里。</p>
 	) : (
-		<p class="empty" id="search-empty" hidden>没有找到匹配的藏书。</p>
+		<p class="empty" id="search-empty" hidden>没有找到匹配的文章。</p>
 	)
 }

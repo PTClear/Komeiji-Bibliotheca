@@ -188,6 +188,11 @@ export function initTabs(): void {
 		tab.pane?.remove();
 		render();
 
+		// Closing the last tab leaves no editor to show, so fall back to the start page.
+		if (tabs.length === 0) {
+			openPage(withBase('/'), false);
+			return;
+		}
 		if (wasActive) show(tabs[index] ?? tabs[index - 1] ?? null);
 	};
 
