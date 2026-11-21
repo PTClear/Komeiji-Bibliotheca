@@ -5,7 +5,7 @@ pubDate: 2026-11-21
 update: 2026-11-21
 description: 泛函的形象化理解
 tags: [数学,泛函]
-draft: true
+draft: false
 ---
 
 # 泛函
@@ -58,7 +58,7 @@ $$
 
 
 $$
-f\mapsto S=S[f],\qquad \mathcal F\to\mathbb C.\tag{1.1}
+f\mapsto S=S[f],\qquad \mathcal F\to\mathbb C.\tag{1.2}
 $$
 总之,可以认为泛函是一种广义的函数,只不过普通函数是"数的函数"，而泛函则是"函数的函数".
 
